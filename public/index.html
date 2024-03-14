@@ -40,9 +40,22 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script
-      src="https://mediafiles.botpress.cloud/23d9b192-5b3a-47bc-aaea-ef45447350c2/webchat/config.js"
-      defer
-    ></script>
+    <script>
+      window.botpressWebChat.init({
+        composerPlaceholder: "Chat with Radio Tech",
+        botConversationDescription: "I will answer any questions",
+        botId: "23d9b192-5b3a-47bc-aaea-ef45447350c2",
+        hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+        messagingUrl: "https://messaging.botpress.cloud",
+        clientId: "23d9b192-5b3a-47bc-aaea-ef45447350c2",
+        webhookId: "f269f425-7be3-4e99-89fd-45224d4c91b0",
+        lazySocket: true,
+        themeName: "prism",
+        botName: "Radio Tech",
+        frontendVersion: "v1",
+        theme: "prism",
+        themeColor: "#2563eb",
+      });
+    </script>
   </body>
 </html>
